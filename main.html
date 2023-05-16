@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style_main.css" />
+    <link rel="stylesheet" href="css/style_test.css" />
+    <title>Main page</title>
+  </head>
+  <body>
+    <div class="container-main">
+      <h1 class="page-title">Домены и поддомены</h1>
+      <div class="add-domain">
+        <img src="image/domain.png" alt="Icon" />
+        <a class="add-domain-link" href="#">Добавить домен</a>
+      </div>
+      <div class="main-form">
+        <div class="form-head">
+          <h3>Список доменов</h3>
+          <button><img src="image/find.png" /></button>
+        </div>
+        <div class="form-middle">Домены и поддомены</div>
+        <div class="form-body">
+          <a href="#">university.ru</a>
+          <div class="buttons">
+            <button class="adding"><img src="image/add.png" /></button>
+            <div class="setting">
+              <button
+                class="btn-color btn btn-secondary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <img src="image/setting.png" />
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Общие настройки</a>
+                <a class="dropdown-item" href="setting.html">Настройка DNS</a>
+                <a class="dropdown-item" href="#">Передача домена</a>
+              </div>
+            </div>
+            <button
+              class="delete" data-toggle="modal" data-target="#exampleModal"
+            >
+              <img src="image/delete.png" />
+            </button>
+            <!-- Button trigger modal -->
+          </div>
+        </div>
+        <div class="form-body">
+          <a href="#">university1.ru</a>
+          <div class="buttons">
+            <button class="adding"><img src="image/add.png" /></button>
+            <div class="setting">
+              <button
+                class="btn-color btn btn-secondary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <img src="image/setting.png" />
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Общие настройки</a>
+                <a class="dropdown-item" href="setting.html">Настройка DNS</a>
+                <a class="dropdown-item" href="#">Передача домена</a>
+              </div>
+            </div>
+            <button class="delete" data-toggle="modal" data-target="#exampleModal">
+              <img src="image/delete.png" />
+            </button>
+          </div>
+        </div>
+        <div class="form-body">
+          <a href="#">university2.ru</a>
+          <div class="buttons">
+            <button class="adding"><img src="image/add.png" /></button>
+            <div class="setting">
+              <button
+                class="btn-color btn btn-secondary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <img src="image/setting.png" />
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Общие настройки</a>
+                <a class="dropdown-item" href="setting.html">Настройка DNS</a>
+                <a class="dropdown-item" href="#">Передача домена</a>
+              </div>
+            </div>
+            <button class="delete" data-toggle="modal" data-target="#exampleModal"><img src="image/delete.png" /></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Вы действительно хотите удалить этот домен?</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Отменить
+            </button>
+            <button type="button" class="btn btn-primary sure">Удалить</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="../javascript/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+      async
+    ></script>
+    <script
+      src="../javascript/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script
+      src="../javascript/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+      async
+    ></script>
+    <script
+      src="javascript/main.js"
+    ></script>
+  </body>
+</html>
+
+
+<!-- <div class="form-body">
+  <a href="#">university2.ru</a>
+  <div class="buttons">
+    <button class="adding"><img src="image/add.png" /></button>
+    <div class="setting">
+      <button
+        class="btn-color btn btn-secondary dropdown-toggle"
+        type="button"
+        id="dropdownMenuButton"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        <img src="image/setting.png" />
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Общие настройки</a>
+        <a class="dropdown-item" href="setting.html">Настройка DNS</a>
+        <a class="dropdown-item" href="#">Передача домена</a>
+      </div>
+    </div>
+    <button class="delete" data-toggle="modal" data-target="#exampleModal"><img src="image/delete.png" /></button>
+  </div>
+</div> -->
