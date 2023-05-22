@@ -20,9 +20,8 @@
             Добавить DNS запись
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal">A</a>
-            <a class="dropdown-item" href="#">AAAA</a>
-            <a class="dropdown-item" href="#">MX</a>
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModalARecord">A</a>
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModalMXRecord">MX</a>
             <a class="dropdown-item" href="#">SRV</a>
             <a class="dropdown-item" href="#">CNAME</a>
             <a class="dropdown-item" href="#">TXT</a>
@@ -67,8 +66,8 @@
 
   <!-- Modal -->
     <div
-    class="modal fade ARecord"
-    id="exampleModal"
+    class="modal fade"
+    id="exampleModalARecord"
     tabindex="-1"
     role="dialog"
     aria-labelledby="exampleModalLabel"
@@ -104,8 +103,73 @@
       </div>
     </div>
   </div>
-  <script src="../javascript/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous" async></script>
-  <script src="../javascript/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous" defer></script>
-  <script src="../javascript/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous" async></script>
+
+  <!-- Modal -->
+  <div
+  class="modal fade"
+  id="exampleModalMXRecord"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Добавление MX-записи</h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Приоритет: </p>
+        <input class="form-control" type="text" placeholder="">
+        <p>Значение: </p>
+        <input class="form-control" type="text" placeholder="__.__________.__">
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-secondary"
+          data-dismiss="modal"
+        >
+          Отменить
+        </button>
+        <button type="button" class="btn btn-primary sure">Добавить</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <script 
+    language="JavaScript"
+    type="text/javascript" 
+    src="javascript/jquery-3.2.1.slim.min.js"
+  ></script>
+  <script 
+    language="JavaScript"
+    type="text/javascript"
+    src="javascript/popper.min.js"
+  ></script>
+  <script 
+    language="JavaScript"
+    type="text/javascript"
+    src="javascript/bootstrap.min.js"
+  ></script>
+  <script 
+    language="JavaScript"
+    type="text/javascript"
+    src="javascript/main.js"
+  ></script>
 </body>
 </html>
+
+<!--
+integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous" async
+ integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous" defer
+ integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous" async
+-->
