@@ -1,24 +1,32 @@
 
 $(document).ready(function(){
-  // $('.info__add').click(function () {
-  //   $(this).parent().append($('<div class="form-body">', {
-  //           'html': '<a href="#">university2.ru</a>' + 
-  //           '<div class="buttons">' + 
-  //           '<button class="adding"><img src="image/add.png" /></button>' + 
-  //           '<div class="setting">' + 
-  //           '<button class="btn-color btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">' +
-  //               '<img src="image/setting.png"/>' + 
-  //               '</button>' + 
-  //               '<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">' + 
-  //                 '<a class="dropdown-item" href="#">Общие настройки</a>' + 
-  //                 '<a class="dropdown-item" href="setting.html">Настройка DNS</a>' + 
-  //                 '<a class="dropdown-item" href="#">Передача домена</a>' + 
-  //               '</div>' + 
-  //             '</div>' + 
-  //             '<button class="delete" data-toggle="modal" data-target="#exampleModal"><img src="image/delete.png" /></button>' +
-  //           '</div>'
-  //   }));
-  // });
+  
+    const record = document.getElementById("ARecord");
+    const modal = document.getElementById("exampleModalARecord");
+    const error = document.getElementById("error");
+
+    modal.addEventListener("sumbit", (e) => {
+      const errors = [];
+
+      if (record.length > 12){
+        errorMsgs.push("Too long!");
+      }
+
+      if(errors.length > 0){
+        e.preventDefault();
+        error.toggleAttribute('hidden');
+        error.innerHTML = errors.join(', ');
+      }
+    });
+
+    const input = document.getElementsByClassName("form-control");
+    const button = document.getElementsByClassName("btn-primary");
+
+    button.disabled = true;
+
+    input.addEventListener("input", function() {
+      button.disabled = !this.value.length;
+    })
 
   $('.delete').click(function (){
     var row = $(this);
